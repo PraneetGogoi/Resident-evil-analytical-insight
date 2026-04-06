@@ -1,0 +1,15 @@
+id,title,year,type,chronology_order
+re,Resident Evil,1996,mainline,2
+re2,Resident Evil 2,1998,mainline,4
+re3,Resident Evil 3: Nemesis,1999,mainline,3
+re_ve,Resident Evil: Code – Veronica,2000,mainline,5
+re0,Resident Evil 0,2002,mainline,1
+re4,Resident Evil 4,2005,mainline,6
+re5,Resident Evil 5,2009,mainline,8
+re_re,Resident Evil: Revelations,2012,spinoff,7
+re6,Resident Evil 6,2012,mainline,10
+re_re2,Resident Evil: Revelations 2,2015,spinoff,9
+re7,Resident Evil 7: Biohazard,2017,mainline,11
+re8,Resident Evil Village,2021,mainline,12
+re_sr,Resident Evil Village – Shadow of Rose,2022,spinoff,13
+re9,Resident Evil Requiem,2026,mainline,14

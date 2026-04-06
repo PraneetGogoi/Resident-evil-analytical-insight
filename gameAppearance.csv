@@ -1,0 +1,116 @@
+game_id,character_id,role,game_title,character_name
+re,6,villain,Resident Evil,Albert Wesker
+re,15,hero,Resident Evil,Chris Redfield
+re,16,hero,Resident Evil,Jill Valentine
+re,17,support,Resident Evil,Barry Burton
+re,18,support,Resident Evil,Brad Vickers
+re,19,support,Resident Evil,Joseph Frost
+re,20,support,Resident Evil,Rebecca Chambers
+re,21,support,Resident Evil,Richard Aiken
+re,22,support,Resident Evil,Enrico Marini
+re,23,support,Resident Evil,Forest Speyer
+re,24,support,Resident Evil,Kenneth J. Sullivan
+re0,6,villain,Resident Evil 0,Albert Wesker
+re0,20,hero,Resident Evil 0,Rebecca Chambers
+re0,22,support,Resident Evil 0,Enrico Marini
+re0,27,villain,Resident Evil 0,William Birkin
+re0,42,hero,Resident Evil 0,Billy Coen
+re0,43,villain,Resident Evil 0,James Marcus
+re0,44,support,Resident Evil 0,Edward Dewey
+re2,1,hero,Resident Evil 2,Leon Scott Kennedy
+re2,3,support,Resident Evil 2,Ada Wong
+re2,25,hero,Resident Evil 2,Claire Redfield
+re2,26,support,Resident Evil 2,Sherry Birkin
+re2,27,villain,Resident Evil 2,William Birkin
+re2,28,support,Resident Evil 2,Annette Birkin
+re2,29,villain,Resident Evil 2,Brian Irons
+re2,30,support,Resident Evil 2,Marvin Branagh
+re2,31,support,Resident Evil 2,Ben Bertolucci
+re2,32,support,Resident Evil 2,Robert Kendo
+re3,16,hero,Resident Evil 3: Nemesis,Jill Valentine
+re3,18,support,Resident Evil 3: Nemesis,Brad Vickers
+re3,30,support,Resident Evil 3: Nemesis,Marvin Branagh
+re3,33,hero,Resident Evil 3: Nemesis,Carlos Oliveira
+re3,34,villain,Resident Evil 3: Nemesis,Nemesis
+re3,35,villain,Resident Evil 3: Nemesis,Nikolai Zinoviev
+re3,36,support,Resident Evil 3: Nemesis,Mikhail Victor
+re3,37,support,Resident Evil 3: Nemesis,Dario Rosso
+re4,1,hero,Resident Evil 4,Leon Scott Kennedy
+re4,2,hero,Resident Evil 4,Ashley Graham
+re4,3,hero,Resident Evil 4,Ada Wong
+re4,4,hero,Resident Evil 4,Ingrid Hunnigan
+re4,5,hero,Resident Evil 4,Luis Sera
+re4,6,villain,Resident Evil 4,Albert Wesker
+re4,7,hero,Resident Evil 4,HUNK
+re4,8,hero,Resident Evil 4,Mercante d'armi
+re4,9,villain,Resident Evil 4,Las Plagas
+re4,10,villain,Resident Evil 4,Los Ganados
+re4,11,villain,Resident Evil 4,Lord Osmund Saddler
+re4,12,villain,Resident Evil 4,Ramon Salazar
+re4,13,villain,Resident Evil 4,Bitores Mendez
+re4,14,villain,Resident Evil 4,Jack Krauser
+re5,6,villain,Resident Evil 5,Albert Wesker
+re5,15,hero,Resident Evil 5,Chris Redfield
+re5,16,support,Resident Evil 5,Jill Valentine
+re5,45,hero,Resident Evil 5,Sheva Alomar
+re5,46,villain,Resident Evil 5,Ricardo Irving
+re5,47,villain,Resident Evil 5,Excella Gionne
+re5,48,support,Resident Evil 5,Josh Stone
+re5,49,support,Resident Evil 5,Ozwell E. Spencer
+re6,1,hero,Resident Evil 6,Leon Scott Kennedy
+re6,3,support,Resident Evil 6,Ada Wong
+re6,4,support,Resident Evil 6,Ingrid Hunnigan
+re6,15,hero,Resident Evil 6,Chris Redfield
+re6,26,support,Resident Evil 6,Sherry Birkin
+re6,60,hero,Resident Evil 6,Jake Muller
+re6,61,hero,Resident Evil 6,Helena Harper
+re6,62,hero,Resident Evil 6,Piers Nivans
+re6,63,villain,Resident Evil 6,Derek C. Simmons
+re7,67,hero,Resident Evil 7: Biohazard,Ethan Winters
+re7,68,support,Resident Evil 7: Biohazard,Mia Winters
+re7,69,villain,Resident Evil 7: Biohazard,Jack Baker
+re7,70,villain,Resident Evil 7: Biohazard,Marguerite Baker
+re7,71,villain,Resident Evil 7: Biohazard,Lucas Baker
+re7,72,support,Resident Evil 7: Biohazard,Zoe Baker
+re7,73,villain,Resident Evil 7: Biohazard,Eveline
+re8,15,support,Resident Evil Village,Chris Redfield
+re8,67,hero,Resident Evil Village,Ethan Winters
+re8,68,support,Resident Evil Village,Mia Winters
+re8,74,support,Resident Evil Village,Rosemary Winters
+re8,75,villain,Resident Evil Village,Mother Miranda
+re8,76,villain,Resident Evil Village,Alcina Dimitrescu
+re8,77,villain,Resident Evil Village,Karl Heisenberg
+re8,78,villain,Resident Evil Village,Salvatore Moreau
+re8,79,villain,Resident Evil Village,Donna Beneviento
+re9,1,hero,Resident Evil Requiem,Leon Scott Kennedy
+re9,26,support,Resident Evil Requiem,Sherry Birkin
+re9,80,hero,Resident Evil Requiem,Grace Ashcroft
+re9,81,villain,Resident Evil Requiem,Victor Gideon
+re9,82,support,Resident Evil Requiem,Nathan Dempsey
+re9,83,support,Resident Evil Requiem,Alyssa Ashcroft
+re_re,15,hero,Resident Evil: Revelations,Chris Redfield
+re_re,16,hero,Resident Evil: Revelations,Jill Valentine
+re_re,51,support,Resident Evil: Revelations,Parker Luciani
+re_re,52,support,Resident Evil: Revelations,Jessica Sherawat
+re_re,53,support,Resident Evil: Revelations,Clive R. O'Brian
+re_re,54,support,Resident Evil: Revelations,Raymond Vester
+re_re,55,villain,Resident Evil: Revelations,Morgan Lansdale
+re_re,56,villain,Resident Evil: Revelations,Jack Norman
+re_re,57,support,Resident Evil: Revelations,Rachel Foley
+re_re,58,support,Resident Evil: Revelations,Keith Lumley
+re_re,59,support,Resident Evil: Revelations,Quint Cetcham
+re_re2,17,hero,Resident Evil: Revelations 2,Barry Burton
+re_re2,25,hero,Resident Evil: Revelations 2,Claire Redfield
+re_re2,64,support,Resident Evil: Revelations 2,Moira Burton
+re_re2,65,support,Resident Evil: Revelations 2,Natalia Korda
+re_re2,66,villain,Resident Evil: Revelations 2,Alex Wesker
+re_sr,67,support,Resident Evil Village – Shadow of Rose,Ethan Winters
+re_sr,74,hero,Resident Evil Village – Shadow of Rose,Rosemary Winters
+re_sr,75,villain,Resident Evil Village – Shadow of Rose,Mother Miranda
+re_ve,6,villain,Resident Evil: Code – Veronica,Albert Wesker
+re_ve,15,hero,Resident Evil: Code – Veronica,Chris Redfield
+re_ve,25,hero,Resident Evil: Code – Veronica,Claire Redfield
+re_ve,38,hero,Resident Evil: Code – Veronica,Steve Burnside
+re_ve,39,villain,Resident Evil: Code – Veronica,Alexia Ashford
+re_ve,40,villain,Resident Evil: Code – Veronica,Alfred Ashford
+re_ve,41,support,Resident Evil: Code – Veronica,Rodrigo Juan Raval
