@@ -1,3 +1,6 @@
+<img width="1710" height="1036" alt="Screenshot 2026-04-06 at 11 21 04 PM" src="https://github.com/user-attachments/assets/1c6743d2-4baf-472b-a47c-51a82f74a2b9" />
+
+
 # 🧟 Resident Evil Analytical Insight
 
 A data-driven analytical project inspired by the **Resident Evil universe**, focused on extracting meaningful insights using **data science, network analysis, and visualization techniques**.
@@ -29,6 +32,9 @@ This project blends **entertainment data + analytical thinking**, making it both
 * 🧪 Exploratory data analysis (EDA)
 
 ---
+
+<img width="1710" height="1031" alt="Screenshot 2026-04-06 at 11 21 29 PM" src="https://github.com/user-attachments/assets/87111b1b-a175-4c06-aac1-7ed3b8ad8fff" />
+
 
 ## 🛠️ Tech Stack
 
