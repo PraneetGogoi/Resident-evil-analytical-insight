@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Character, Game } from "@/types";
+import Models from "./Models";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   PieChart, Pie, Cell, LineChart, Line, AreaChart, Area,
@@ -112,9 +114,18 @@ export default function Dashboard() {
         </div>
       </div>
 
-      <div className="mt-8 md:mt-[200px] space-y-12 relative z-10">
-        
-        {/* KPI Cards (styled as medical vitals) */}
+      <div className="mt-8 md:mt-[200px] relative z-10">
+        <Tabs defaultValue="overview" className="w-full">
+          <div className="mb-6 flex justify-end">
+            <TabsList className="bg-[#1f1b17]/80 border border-torch/20">
+              <TabsTrigger value="overview" className="font-['Courier_Prime'] data-[state=active]:bg-torch/20 data-[state=active]:text-torch-hot">Overview</TabsTrigger>
+              <TabsTrigger value="advanced" className="font-['Courier_Prime'] data-[state=active]:bg-torch/20 data-[state=active]:text-torch-hot">Advanced Models</TabsTrigger>
+            </TabsList>
+          </div>
+          
+          <TabsContent value="overview" className="space-y-12">
+            
+            {/* KPI Cards (styled as medical vitals) */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {kpis.map((k, i) => {
             const rotation = i % 2 === 0 ? 'rotate-[1deg]' : '-rotate-[1deg]';
@@ -203,8 +214,13 @@ export default function Dashboard() {
               </BarChart>
             </ResponsiveContainer>
           </div>
-
         </div>
+
+          </TabsContent>
+          <TabsContent value="advanced">
+            <Models />
+          </TabsContent>
+        </Tabs>
       </div>
       
       <div className="h-[100px]"></div>

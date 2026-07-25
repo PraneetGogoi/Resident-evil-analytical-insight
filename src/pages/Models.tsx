@@ -39,7 +39,7 @@ export default function Models() {
 
   if (isLoading) {
     return (
-      <div className="relative max-w-[1300px] mx-auto px-6 md:px-12 pt-[70px] pb-[60px] z-[5] min-h-screen flex items-center justify-center">
+      <div className="min-h-[400px] flex items-center justify-center">
         <div className="font-['Courier_Prime'] text-torch tracking-widest animate-pulse">TRAINING MODELS...</div>
       </div>
     );
@@ -48,26 +48,10 @@ export default function Models() {
   const { scatter_data, model_accuracies, centroids } = analytics;
 
   return (
-    <div className="relative max-w-[1300px] mx-auto px-6 md:px-12 pt-[70px] pb-[60px] z-[5]">
+    <div className="space-y-12 relative z-10">
       
-      {/* Title Node */}
-      <div className="md:absolute z-[6] md:top-0 md:left-[2%] md:w-[460px] mb-8 md:mb-0">
-        <div className="bg-gradient-to-br from-[#1c140c66] to-[#050301b3] border border-torch/25 p-7 md:p-8 transform md:rotate-[0.5deg] relative shadow-xl">
-          <div className="absolute -top-1.5 left-5 w-[22px] h-[22px] rounded-full bg-[radial-gradient(circle_at_35%_30%,var(--torch-hot),var(--torch)_70%)] shadow-[0_2px_4px_rgba(0,0,0,0.6)]" />
-          <div className="font-['Courier_Prime'] text-[10px] tracking-[4px] text-torch uppercase mb-4 opacity-90">
-            Machine Learning Core
-          </div>
-          <h1 className="title-h1 font-['Cinzel'] font-bold text-4xl md:text-[50px] tracking-[5px] text-bone leading-none relative">
-            ADVANCED
-            <span className="block text-[0.48em] tracking-[7px] text-torch-hot mt-2">MODELS & TOPOLOGY</span>
-          </h1>
-        </div>
-      </div>
-
-      <div className="mt-8 md:mt-[200px] space-y-12 relative z-10">
-        
-        {/* Machine Learning Models */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      {/* Machine Learning Models */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           
           {/* Model Accuracy Comparison */}
           <div className="bg-[#1f1b17]/80 border border-torch/20 p-6 shadow-xl relative group hover:border-torch/50 transition-colors">
@@ -186,10 +170,6 @@ export default function Models() {
             </div>
           </div>
         </div>
-
       </div>
-      
-      <div className="h-[100px]"></div>
-    </div>
   );
 }
