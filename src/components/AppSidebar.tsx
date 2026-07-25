@@ -1,4 +1,4 @@
-import { Home, BarChart3, Users, Gamepad2, Sun, Moon } from "lucide-react";
+import { Home, BarChart3, Users, Gamepad2, Sun, Moon, BrainCircuit } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import { useLocation } from "react-router-dom";
 import { useTheme } from "@/components/ThemeProvider";
@@ -19,6 +19,7 @@ import {
 const items = [
   { title: "Home", url: "/", icon: Home },
   { title: "Dashboard", url: "/dashboard", icon: BarChart3 },
+  { title: "Advanced Models", url: "/models", icon: BrainCircuit },
   { title: "Characters", url: "/characters", icon: Users },
   { title: "Games", url: "/games", icon: Gamepad2 },
 ];

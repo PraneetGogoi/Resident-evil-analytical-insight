@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { Layout } from "@/components/Layout";
 import Index from "./pages/Index";
 import Dashboard from "./pages/Dashboard";
+import Models from "./pages/Models";
 import Characters from "./pages/Characters";
 import Games from "./pages/Games";
 import NotFound from "./pages/NotFound";
@@ -24,6 +25,7 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/models" element={<Models />} />
               <Route path="/characters" element={<Characters />} />
               <Route path="/games" element={<Games />} />
               <Route path="*" element={<NotFound />} />
