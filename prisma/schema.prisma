@@ -1,0 +1,96 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Character {
+  id                  String       @id
+  name                String
+  faction             String
+  classification      String
+  status              String
+  killCount           Int          @default(0)
+  firstIncident       String
+  redactionState      String
+  portraitFilename    String
+  bio                 String       @default("")
+
+  // Analytics fields
+  pageRank            Float?
+  degree              Int?
+  communityId         Int?
+  kmeansCluster       Int?
+  predictedRole       String?
+  predictedConfidence Float?
+  predictionFeatures  String?
+
+  // Relations
+  incidents           Appearance[]
+  sourceConnections   CharacterConnection[] @relation("SourceConnection")
+  targetConnections   CharacterConnection[] @relation("TargetConnection")
+}
+
+model CharacterConnection {
+  sourceId String
+  targetId String
+  weight   Int
+
+  source   Character @relation("SourceConnection", fields: [sourceId], references: [id])
+  target   Character @relation("TargetConnection", fields: [targetId], references: [id])
+
+  @@id([sourceId, targetId])
+}
+
+model Game {
+  id                String       @id
+  title             String
+  year              Int
+  type              String       // 'mainline' | 'spinoff'
+  chronologyOrder   Int
+  location          String?
+  protagonists      String?
+  blurb             String?
+  outbreakClass     String?
+  casualties        String?
+  containmentStatus String?
+  severity          Int?
+
+  // Relations
+  characters        Appearance[]
+  analytics         Analytics?
+  interactions      Interaction[]
+}
+
+// Join table for characters and games
+model Appearance {
+  characterId String
+  gameId      String
+  role        String
+
+  character   Character @relation(fields: [characterId], references: [id])
+  game        Game      @relation(fields: [gameId], references: [id])
+
+  @@id([characterId, gameId])
+}
+
+model Analytics {
+  gameId                String  @id
+  totalScenes           Int
+  uniqueCharacters      Int
+  totalInteractions     Int
+  interactionsPerScene  Float
+
+  game                  Game    @relation(fields: [gameId], references: [id])
+}
+
+model Interaction {
+  id        Int      @id @default(autoincrement())
+  gameId    String
+  timestamp DateTime @default(now())
+
+  game      Game     @relation(fields: [gameId], references: [id])
+}

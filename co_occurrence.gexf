@@ -1,0 +1,447 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-04-06">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="role" type="string" />
+      <attribute id="1" title="degree" type="long" />
+    </attributes>
+    <nodes>
+      <node id="6" label="Albert Wesker">
+        <attvalues>
+          <attvalue for="0" value="villain" />
+          <attvalue for="1" value="9" />
+        </attvalues>
+      </node>
+      <node id="15" label="Chris Redfield">
+        <attvalues>
+          <attvalue for="0" value="hero" />
+          <attvalue for="1" value="26" />
+        </attvalues>
+      </node>
+      <node id="16" label="Jill Valentine">
+        <attvalues>
+          <attvalue for="0" value="hero" />
+          <attvalue for="1" value="8" />
+        </attvalues>
+      </node>
+      <node id="17" label="Barry Burton">
+        <attvalues>
+          <attvalue for="0" value="hero" />
+          <attvalue for="1" value="4" />
+        </attvalues>
+      </node>
+      <node id="18" label="Brad Vickers">
+        <attvalues>
+          <attvalue for="0" value="support" />
+          <attvalue for="1" value="6" />
+        </attvalues>
+      </node>
+      <node id="20" label="Rebecca Chambers">
+        <attvalues>
+          <attvalue for="0" value="support" />
+          <attvalue for="1" value="8" />
+        </attvalues>
+      </node>
+      <node id="22" label="Enrico Marini">
+        <attvalues>
+          <attvalue for="0" value="support" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="44" label="Edward Dewey">
+        <attvalues>
+          <attvalue for="0" value="support" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="42" label="Billy Coen">
+        <attvalues>
+          <attvalue for="0" value="hero" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="43" label="James Marcus">
+        <attvalues>
+          <attvalue for="0" value="villain" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="1" label="Leon Scott Kennedy">
+        <attvalues>
+          <attvalue for="0" value="hero" />
+          <attvalue for="1" value="19" />
+        </attvalues>
+      </node>
+      <node id="25" label="Claire Redfield">
+        <attvalues>
+          <attvalue for="0" value="hero" />
+          <attvalue for="1" value="11" />
+        </attvalues>
+      </node>
+      <node id="3" label="Ada Wong">
+        <attvalues>
+          <attvalue for="0" value="hero" />
+          <attvalue for="1" value="14" />
+        </attvalues>
+      </node>
+      <node id="31" label="Ben Bertolucci">
+        <attvalues>
+          <attvalue for="0" value="support" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="28" label="Annette Birkin">
+        <attvalues>
+          <attvalue for="0" value="support" />
+          <attvalue for="1" value="5" />
+        </attvalues>
+      </node>
+      <node id="27" label="William Birkin">
+        <attvalues>
+          <attvalue for="0" value="villain" />
+          <attvalue for="1" value="5" />
+        </attvalues>
+      </node>
+      <node id="26" label="Sherry Birkin">
+        <attvalues>
+          <attvalue for="0" value="support" />
+          <attvalue for="1" value="10" />
+        </attvalues>
+      </node>
+      <node id="34" label="Nemesis">
+        <attvalues>
+          <attvalue for="0" value="villain" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="5" label="Luis Sera">
+        <attvalues>
+          <attvalue for="0" value="hero" />
+          <attvalue for="1" value="5" />
+        </attvalues>
+      </node>
+      <node id="13" label="Bitores Mendez">
+        <attvalues>
+          <attvalue for="0" value="villain" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="2" label="Ashley Graham">
+        <attvalues>
+          <attvalue for="0" value="hero" />
+          <attvalue for="1" value="6" />
+        </attvalues>
+      </node>
+      <node id="11" label="Lord Osmund Saddler">
+        <attvalues>
+          <attvalue for="0" value="villain" />
+          <attvalue for="1" value="6" />
+        </attvalues>
+      </node>
+      <node id="12" label="Ramon Salazar">
+        <attvalues>
+          <attvalue for="0" value="villain" />
+          <attvalue for="1" value="6" />
+        </attvalues>
+      </node>
+      <node id="14" label="Jack Krauser">
+        <attvalues>
+          <attvalue for="0" value="villain" />
+          <attvalue for="1" value="5" />
+        </attvalues>
+      </node>
+      <node id="10" label="Los Ganados">
+        <attvalues>
+          <attvalue for="0" value="villain" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="45" label="Sheva Alomar">
+        <attvalues>
+          <attvalue for="0" value="hero" />
+          <attvalue for="1" value="8" />
+        </attvalues>
+      </node>
+      <node id="50" label="Kirk Mathison">
+        <attvalues>
+          <attvalue for="0" value="support" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="48" label="Josh Stone">
+        <attvalues>
+          <attvalue for="0" value="support" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="46" label="Ricardo Irving">
+        <attvalues>
+          <attvalue for="0" value="villain" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="47" label="Excella Gionne">
+        <attvalues>
+          <attvalue for="0" value="villain" />
+          <attvalue for="1" value="4" />
+        </attvalues>
+      </node>
+      <node id="60" label="Jake Muller">
+        <attvalues>
+          <attvalue for="0" value="hero" />
+          <attvalue for="1" value="7" />
+        </attvalues>
+      </node>
+      <node id="62" label="Piers Nivans">
+        <attvalues>
+          <attvalue for="0" value="hero" />
+          <attvalue for="1" value="6" />
+        </attvalues>
+      </node>
+      <node id="61" label="Helena Harper">
+        <attvalues>
+          <attvalue for="0" value="hero" />
+          <attvalue for="1" value="7" />
+        </attvalues>
+      </node>
+      <node id="63" label="Derek C. Simmons">
+        <attvalues>
+          <attvalue for="0" value="villain" />
+          <attvalue for="1" value="4" />
+        </attvalues>
+      </node>
+      <node id="67" label="Ethan Winters">
+        <attvalues>
+          <attvalue for="0" value="hero" />
+          <attvalue for="1" value="8" />
+        </attvalues>
+      </node>
+      <node id="68" label="Mia Winters">
+        <attvalues>
+          <attvalue for="0" value="hero" />
+          <attvalue for="1" value="5" />
+        </attvalues>
+      </node>
+      <node id="72" label="Zoe Baker">
+        <attvalues>
+          <attvalue for="0" value="support" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="75" label="Mother Miranda">
+        <attvalues>
+          <attvalue for="0" value="villain" />
+          <attvalue for="1" value="4" />
+        </attvalues>
+      </node>
+      <node id="76" label="Alcina Dimitrescu">
+        <attvalues>
+          <attvalue for="0" value="villain" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="77" label="Karl Heisenberg">
+        <attvalues>
+          <attvalue for="0" value="villain" />
+          <attvalue for="1" value="6" />
+        </attvalues>
+      </node>
+      <node id="78" label="Salvatore Moreau">
+        <attvalues>
+          <attvalue for="0" value="villain" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="74" label="Rosemary Winters">
+        <attvalues>
+          <attvalue for="0" value="support" />
+          <attvalue for="1" value="5" />
+        </attvalues>
+      </node>
+      <node id="80" label="Grace Ashcroft">
+        <attvalues>
+          <attvalue for="0" value="hero" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="82" label="Nathan Dempsey">
+        <attvalues>
+          <attvalue for="0" value="support" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="81" label="Victor Gideon">
+        <attvalues>
+          <attvalue for="0" value="villain" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="41" label="Rodrigo Juan Raval">
+        <attvalues>
+          <attvalue for="0" value="support" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="38" label="Steve Burnside">
+        <attvalues>
+          <attvalue for="0" value="hero" />
+          <attvalue for="1" value="4" />
+        </attvalues>
+      </node>
+      <node id="40" label="Alfred Ashford">
+        <attvalues>
+          <attvalue for="0" value="villain" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="39" label="Alexia Ashford">
+        <attvalues>
+          <attvalue for="0" value="villain" />
+          <attvalue for="1" value="5" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="6" target="15" id="0" weight="20" />
+      <edge source="6" target="16" id="1" weight="14" />
+      <edge source="6" target="17" id="2" weight="5" />
+      <edge source="6" target="18" id="3" weight="2" />
+      <edge source="6" target="20" id="4" weight="2" />
+      <edge source="6" target="45" id="5" weight="9" />
+      <edge source="6" target="47" id="6" weight="3" />
+      <edge source="6" target="25" id="7" weight="2" />
+      <edge source="6" target="39" id="8" weight="2" />
+      <edge source="15" target="16" id="9" weight="15" />
+      <edge source="15" target="17" id="10" weight="3" />
+      <edge source="15" target="18" id="11" weight="4" />
+      <edge source="15" target="20" id="12" weight="8" />
+      <edge source="15" target="10" id="13" weight="1" />
+      <edge source="15" target="45" id="14" weight="40" />
+      <edge source="15" target="50" id="15" weight="7" />
+      <edge source="15" target="48" id="16" weight="9" />
+      <edge source="15" target="46" id="17" weight="4" />
+      <edge source="15" target="47" id="18" weight="5" />
+      <edge source="15" target="26" id="19" weight="4" />
+      <edge source="15" target="60" id="20" weight="4" />
+      <edge source="15" target="62" id="21" weight="7" />
+      <edge source="15" target="3" id="22" weight="4" />
+      <edge source="15" target="1" id="23" weight="2" />
+      <edge source="15" target="61" id="24" weight="1" />
+      <edge source="15" target="67" id="25" weight="4" />
+      <edge source="15" target="68" id="26" weight="4" />
+      <edge source="15" target="77" id="27" weight="2" />
+      <edge source="15" target="78" id="28" weight="1" />
+      <edge source="15" target="74" id="29" weight="1" />
+      <edge source="15" target="41" id="30" weight="1" />
+      <edge source="15" target="39" id="31" weight="3" />
+      <edge source="15" target="25" id="32" weight="5" />
+      <edge source="15" target="38" id="33" weight="1" />
+      <edge source="16" target="17" id="34" weight="9" />
+      <edge source="16" target="18" id="35" weight="6" />
+      <edge source="16" target="20" id="36" weight="3" />
+      <edge source="16" target="34" id="37" weight="1" />
+      <edge source="16" target="45" id="38" weight="6" />
+      <edge source="16" target="47" id="39" weight="1" />
+      <edge source="17" target="18" id="40" weight="2" />
+      <edge source="18" target="20" id="41" weight="2" />
+      <edge source="18" target="34" id="42" weight="1" />
+      <edge source="20" target="22" id="43" weight="4" />
+      <edge source="20" target="44" id="44" weight="2" />
+      <edge source="20" target="42" id="45" weight="23" />
+      <edge source="20" target="43" id="46" weight="1" />
+      <edge source="22" target="44" id="47" weight="1" />
+      <edge source="22" target="42" id="48" weight="1" />
+      <edge source="42" target="43" id="49" weight="1" />
+      <edge source="1" target="25" id="50" weight="18" />
+      <edge source="1" target="3" id="51" weight="34" />
+      <edge source="1" target="31" id="52" weight="4" />
+      <edge source="1" target="28" id="53" weight="6" />
+      <edge source="1" target="27" id="54" weight="3" />
+      <edge source="1" target="26" id="55" weight="45" />
+      <edge source="1" target="5" id="56" weight="4" />
+      <edge source="1" target="13" id="57" weight="1" />
+      <edge source="1" target="2" id="58" weight="9" />
+      <edge source="1" target="11" id="59" weight="5" />
+      <edge source="1" target="12" id="60" weight="4" />
+      <edge source="1" target="14" id="61" weight="2" />
+      <edge source="1" target="60" id="62" weight="1" />
+      <edge source="1" target="61" id="63" weight="2" />
+      <edge source="1" target="63" id="64" weight="1" />
+      <edge source="1" target="62" id="65" weight="2" />
+      <edge source="1" target="80" id="66" weight="22" />
+      <edge source="1" target="81" id="67" weight="6" />
+      <edge source="25" target="26" id="68" weight="28" />
+      <edge source="25" target="28" id="69" weight="5" />
+      <edge source="25" target="3" id="70" weight="1" />
+      <edge source="25" target="27" id="71" weight="2" />
+      <edge source="25" target="41" id="72" weight="2" />
+      <edge source="25" target="38" id="73" weight="15" />
+      <edge source="25" target="40" id="74" weight="6" />
+      <edge source="25" target="39" id="75" weight="2" />
+      <edge source="3" target="31" id="76" weight="4" />
+      <edge source="3" target="28" id="77" weight="6" />
+      <edge source="3" target="27" id="78" weight="3" />
+      <edge source="3" target="26" id="79" weight="5" />
+      <edge source="3" target="12" id="80" weight="2" />
+      <edge source="3" target="2" id="81" weight="2" />
+      <edge source="3" target="14" id="82" weight="1" />
+      <edge source="3" target="11" id="83" weight="1" />
+      <edge source="3" target="60" id="84" weight="3" />
+      <edge source="3" target="62" id="85" weight="4" />
+      <edge source="3" target="61" id="86" weight="1" />
+      <edge source="28" target="27" id="87" weight="1" />
+      <edge source="28" target="26" id="88" weight="2" />
+      <edge source="27" target="26" id="89" weight="2" />
+      <edge source="26" target="60" id="90" weight="7" />
+      <edge source="26" target="62" id="91" weight="4" />
+      <edge source="26" target="61" id="92" weight="1" />
+      <edge source="26" target="63" id="93" weight="1" />
+      <edge source="5" target="13" id="94" weight="1" />
+      <edge source="5" target="2" id="95" weight="2" />
+      <edge source="5" target="12" id="96" weight="1" />
+      <edge source="5" target="11" id="97" weight="1" />
+      <edge source="2" target="11" id="98" weight="4" />
+      <edge source="2" target="12" id="99" weight="2" />
+      <edge source="2" target="14" id="100" weight="1" />
+      <edge source="11" target="12" id="101" weight="1" />
+      <edge source="11" target="14" id="102" weight="1" />
+      <edge source="12" target="14" id="103" weight="1" />
+      <edge source="10" target="45" id="104" weight="1" />
+      <edge source="10" target="50" id="105" weight="1" />
+      <edge source="45" target="50" id="106" weight="7" />
+      <edge source="45" target="48" id="107" weight="9" />
+      <edge source="45" target="46" id="108" weight="4" />
+      <edge source="45" target="47" id="109" weight="6" />
+      <edge source="48" target="46" id="110" weight="3" />
+      <edge source="60" target="62" id="111" weight="4" />
+      <edge source="60" target="61" id="112" weight="1" />
+      <edge source="60" target="63" id="113" weight="1" />
+      <edge source="62" target="61" id="114" weight="1" />
+      <edge source="61" target="63" id="115" weight="1" />
+      <edge source="67" target="68" id="116" weight="15" />
+      <edge source="67" target="72" id="117" weight="10" />
+      <edge source="67" target="75" id="118" weight="1" />
+      <edge source="67" target="76" id="119" weight="2" />
+      <edge source="67" target="77" id="120" weight="3" />
+      <edge source="67" target="78" id="121" weight="1" />
+      <edge source="67" target="74" id="122" weight="15" />
+      <edge source="68" target="72" id="123" weight="3" />
+      <edge source="68" target="77" id="124" weight="1" />
+      <edge source="68" target="74" id="125" weight="1" />
+      <edge source="75" target="76" id="126" weight="1" />
+      <edge source="75" target="77" id="127" weight="1" />
+      <edge source="75" target="74" id="128" weight="3" />
+      <edge source="76" target="77" id="129" weight="1" />
+      <edge source="77" target="78" id="130" weight="1" />
+      <edge source="74" target="82" id="131" weight="4" />
+      <edge source="80" target="82" id="132" weight="4" />
+      <edge source="80" target="81" id="133" weight="6" />
+      <edge source="38" target="39" id="134" weight="2" />
+      <edge source="38" target="40" id="135" weight="4" />
+      <edge source="40" target="39" id="136" weight="2" />
+    </edges>
+  </graph>
+</gexf>

@@ -1,0 +1,84 @@
+id,name,role
+1,Leon Scott Kennedy,hero
+2,Ashley Graham,hero
+3,Ada Wong,hero
+4,Ingrid Hunnigan,hero
+5,Luis Sera,hero
+6,Albert Wesker,villain
+7,HUNK,hero
+8,Mercante d'armi,hero
+9,Las Plagas,villain
+10,Los Ganados,villain
+11,Lord Osmund Saddler,villain
+12,Ramon Salazar,villain
+13,Bitores Mendez,villain
+14,Jack Krauser,villain
+15,Chris Redfield,hero
+16,Jill Valentine,hero
+17,Barry Burton,hero
+18,Brad Vickers,support
+19,Joseph Frost,support
+20,Rebecca Chambers,support
+21,Richard Aiken,support
+22,Enrico Marini,support
+23,Forest Speyer,support
+24,Kenneth J. Sullivan,support
+25,Claire Redfield,hero
+26,Sherry Birkin,support
+27,William Birkin,villain
+28,Annette Birkin,support
+29,Brian Irons,villain
+30,Marvin Branagh,support
+31,Ben Bertolucci,support
+32,Robert Kendo,support
+33,Carlos Oliveira,hero
+34,Nemesis,villain
+35,Nikolai Zinoviev,villain
+36,Mikhail Victor,support
+37,Dario Rosso,support
+38,Steve Burnside,hero
+39,Alexia Ashford,villain
+40,Alfred Ashford,villain
+41,Rodrigo Juan Raval,support
+42,Billy Coen,hero
+43,James Marcus,villain
+44,Edward Dewey,support
+45,Sheva Alomar,hero
+46,Ricardo Irving,villain
+47,Excella Gionne,villain
+48,Josh Stone,support
+49,Ozwell E. Spencer,villain
+50,Kirk Mathison,support
+51,Parker Luciani,hero
+52,Jessica Sherawat,hero
+53,Clive R. O'Brian,support
+54,Raymond Vester,support
+55,Morgan Lansdale,villain
+56,Jack Norman,villain
+57,Rachel Foley,support
+58,Keith Lumley,support
+59,Quint Cetcham,support
+60,Jake Muller,hero
+61,Helena Harper,hero
+62,Piers Nivans,hero
+63,Derek C. Simmons,villain
+64,Moira Burton,support
+65,Natalia Korda,support
+66,Alex Wesker,villain
+67,Ethan Winters,hero
+68,Mia Winters,hero
+69,Jack Baker,villain
+70,Marguerite Baker,villain
+71,Lucas Baker,villain
+72,Zoe Baker,support
+73,Eveline,villain
+74,Rosemary Winters,support
+75,Mother Miranda,villain
+76,Alcina Dimitrescu,villain
+77,Karl Heisenberg,villain
+78,Salvatore Moreau,villain
+79,Donna Beneviento,villain
+80,Grace Ashcroft,hero
+81,Victor Gideon,villain
+82,Nathan Dempsey,support
+83,Alyssa Ashcroft,support

@@ -1,0 +1,832 @@
+[
+  {
+    "id": "1",
+    "pageRank": 0.09141534732779032,
+    "degree": 171,
+    "communityId": 3,
+    "kmeansCluster": 4,
+    "predictedRole": "hero",
+    "predictedConfidence": 0.9,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "2",
+    "pageRank": 0.014281676431604634,
+    "degree": 20,
+    "communityId": 3,
+    "kmeansCluster": 0,
+    "predictedRole": "hero",
+    "predictedConfidence": 0.94,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "3",
+    "pageRank": 0.03874163088787586,
+    "degree": 71,
+    "communityId": 3,
+    "kmeansCluster": 2,
+    "predictedRole": "hero",
+    "predictedConfidence": 0.89,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "4",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 6,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "5",
+    "pageRank": 0.008771049025643544,
+    "degree": 9,
+    "communityId": 3,
+    "kmeansCluster": 0,
+    "predictedRole": "hero",
+    "predictedConfidence": 0.69,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "6",
+    "pageRank": 0.033219304234569216,
+    "degree": 59,
+    "communityId": 0,
+    "kmeansCluster": 2,
+    "predictedRole": "villain",
+    "predictedConfidence": 0.59,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "7",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 7,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "8",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 8,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "9",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 9,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "10",
+    "pageRank": 0.004236503022536813,
+    "degree": 3,
+    "communityId": 0,
+    "kmeansCluster": 0,
+    "predictedRole": "villain",
+    "predictedConfidence": 0.91,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "11",
+    "pageRank": 0.010229398856924796,
+    "degree": 13,
+    "communityId": 3,
+    "kmeansCluster": 0,
+    "predictedRole": "villain",
+    "predictedConfidence": 0.91,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "12",
+    "pageRank": 0.008998480467244966,
+    "degree": 11,
+    "communityId": 3,
+    "kmeansCluster": 0,
+    "predictedRole": "villain",
+    "predictedConfidence": 0.85,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "13",
+    "pageRank": 0.0039708476564457845,
+    "degree": 2,
+    "communityId": 3,
+    "kmeansCluster": 0,
+    "predictedRole": "villain",
+    "predictedConfidence": 0.9386439393939395,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "14",
+    "pageRank": 0.006031629852892468,
+    "degree": 6,
+    "communityId": 3,
+    "kmeansCluster": 0,
+    "predictedRole": "villain",
+    "predictedConfidence": 0.88,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "15",
+    "pageRank": 0.09040225410562772,
+    "degree": 160,
+    "communityId": 0,
+    "kmeansCluster": 2,
+    "predictedRole": "hero",
+    "predictedConfidence": 0.87,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "16",
+    "pageRank": 0.03662380663460692,
+    "degree": 59,
+    "communityId": 0,
+    "kmeansCluster": 2,
+    "predictedRole": "hero",
+    "predictedConfidence": 0.88,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "17",
+    "pageRank": 0.012555152622157992,
+    "degree": 19,
+    "communityId": 0,
+    "kmeansCluster": 0,
+    "predictedRole": "hero",
+    "predictedConfidence": 0.61,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "18",
+    "pageRank": 0.012842965592103106,
+    "degree": 17,
+    "communityId": 0,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.84,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "19",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 10,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "20",
+    "pageRank": 0.03566766162446227,
+    "degree": 45,
+    "communityId": 1,
+    "kmeansCluster": 2,
+    "predictedRole": "support",
+    "predictedConfidence": 0.65,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "21",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 11,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "22",
+    "pageRank": 0.007543250636744391,
+    "degree": 6,
+    "communityId": 1,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.63,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "23",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 12,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "24",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 13,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "25",
+    "pageRank": 0.04566250510101451,
+    "degree": 86,
+    "communityId": 3,
+    "kmeansCluster": 2,
+    "predictedRole": "hero",
+    "predictedConfidence": 0.82,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "26",
+    "pageRank": 0.049840552004742786,
+    "degree": 99,
+    "communityId": 3,
+    "kmeansCluster": 2,
+    "predictedRole": "support",
+    "predictedConfidence": 0.58,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "27",
+    "pageRank": 0.007706704957480122,
+    "degree": 11,
+    "communityId": 3,
+    "kmeansCluster": 0,
+    "predictedRole": "villain",
+    "predictedConfidence": 0.88,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "28",
+    "pageRank": 0.011904445171234686,
+    "degree": 20,
+    "communityId": 3,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.84,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "29",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 14,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "30",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 15,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "31",
+    "pageRank": 0.006360634674111725,
+    "degree": 8,
+    "communityId": 3,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.65,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "32",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 16,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "33",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 17,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "34",
+    "pageRank": 0.0038579903609835438,
+    "degree": 2,
+    "communityId": 0,
+    "kmeansCluster": 0,
+    "predictedRole": "villain",
+    "predictedConfidence": 0.75,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "35",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 18,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "36",
+    "pageRank": 0.004798763459694757,
+    "degree": 4,
+    "communityId": 0,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.81,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "37",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 19,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "38",
+    "pageRank": 0.013711479529608526,
+    "degree": 22,
+    "communityId": 3,
+    "kmeansCluster": 0,
+    "predictedRole": "hero",
+    "predictedConfidence": 0.96,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "39",
+    "pageRank": 0.008294255380437768,
+    "degree": 11,
+    "communityId": 3,
+    "kmeansCluster": 0,
+    "predictedRole": "villain",
+    "predictedConfidence": 0.98,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "40",
+    "pageRank": 0.008796474451526468,
+    "degree": 12,
+    "communityId": 3,
+    "kmeansCluster": 0,
+    "predictedRole": "villain",
+    "predictedConfidence": 0.87,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "41",
+    "pageRank": 0.004070992041509267,
+    "degree": 3,
+    "communityId": 3,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.75,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "42",
+    "pageRank": 0.020986024751921066,
+    "degree": 25,
+    "communityId": 1,
+    "kmeansCluster": 0,
+    "predictedRole": "hero",
+    "predictedConfidence": 0.89,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "43",
+    "pageRank": 0.004075563621920999,
+    "degree": 2,
+    "communityId": 1,
+    "kmeansCluster": 0,
+    "predictedRole": "villain",
+    "predictedConfidence": 0.9429166666666667,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "44",
+    "pageRank": 0.005104444326237928,
+    "degree": 3,
+    "communityId": 1,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.61,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "45",
+    "pageRank": 0.04539178666199971,
+    "degree": 82,
+    "communityId": 0,
+    "kmeansCluster": 2,
+    "predictedRole": "hero",
+    "predictedConfidence": 0.88,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "46",
+    "pageRank": 0.00808456393643666,
+    "degree": 11,
+    "communityId": 0,
+    "kmeansCluster": 0,
+    "predictedRole": "villain",
+    "predictedConfidence": 0.86,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "47",
+    "pageRank": 0.009876210232208813,
+    "degree": 15,
+    "communityId": 0,
+    "kmeansCluster": 0,
+    "predictedRole": "villain",
+    "predictedConfidence": 0.91,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "48",
+    "pageRank": 0.013119676108507873,
+    "degree": 21,
+    "communityId": 0,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.59,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "49",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 20,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "50",
+    "pageRank": 0.010544220266305101,
+    "degree": 15,
+    "communityId": 0,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.74,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "51",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 21,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "52",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 22,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "53",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 23,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "54",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 24,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "55",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 25,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "56",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 26,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "57",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 27,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "58",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 28,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "59",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 29,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "60",
+    "pageRank": 0.013307906985184742,
+    "degree": 21,
+    "communityId": 3,
+    "kmeansCluster": 0,
+    "predictedRole": "hero",
+    "predictedConfidence": 0.95,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "61",
+    "pageRank": 0.007058755713014182,
+    "degree": 8,
+    "communityId": 3,
+    "kmeansCluster": 0,
+    "predictedRole": "hero",
+    "predictedConfidence": 0.7,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "62",
+    "pageRank": 0.013429806970710428,
+    "degree": 22,
+    "communityId": 3,
+    "kmeansCluster": 0,
+    "predictedRole": "hero",
+    "predictedConfidence": 0.98,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "63",
+    "pageRank": 0.0048589781586546674,
+    "degree": 4,
+    "communityId": 3,
+    "kmeansCluster": 0,
+    "predictedRole": "villain",
+    "predictedConfidence": 0.97,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "64",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 30,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "65",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 31,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "66",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 32,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "67",
+    "pageRank": 0.04113289481808723,
+    "degree": 51,
+    "communityId": 4,
+    "kmeansCluster": 2,
+    "predictedRole": "hero",
+    "predictedConfidence": 0.91,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "68",
+    "pageRank": 0.018852386530250585,
+    "degree": 24,
+    "communityId": 4,
+    "kmeansCluster": 0,
+    "predictedRole": "hero",
+    "predictedConfidence": 0.75,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "69",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 33,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "70",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 34,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "71",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 35,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "72",
+    "pageRank": 0.011548561574178034,
+    "degree": 13,
+    "communityId": 4,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.86,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "73",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 36,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "74",
+    "pageRank": 0.02069901600437991,
+    "degree": 24,
+    "communityId": 4,
+    "kmeansCluster": 3,
+    "predictedRole": "support",
+    "predictedConfidence": 0.62,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "75",
+    "pageRank": 0.007834751247020709,
+    "degree": 6,
+    "communityId": 4,
+    "kmeansCluster": 0,
+    "predictedRole": "villain",
+    "predictedConfidence": 0.73,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "76",
+    "pageRank": 0.006128356789796571,
+    "degree": 4,
+    "communityId": 4,
+    "kmeansCluster": 0,
+    "predictedRole": "villain",
+    "predictedConfidence": 0.87,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "77",
+    "pageRank": 0.010149897327533287,
+    "degree": 9,
+    "communityId": 4,
+    "kmeansCluster": 0,
+    "predictedRole": "villain",
+    "predictedConfidence": 0.8,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "78",
+    "pageRank": 0.004812868327908518,
+    "degree": 3,
+    "communityId": 4,
+    "kmeansCluster": 0,
+    "predictedRole": "villain",
+    "predictedConfidence": 0.9,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "79",
+    "pageRank": 0.002688172043636767,
+    "degree": 0,
+    "communityId": 2,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.4413882648448271,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "80",
+    "pageRank": 0.029095914572446573,
+    "degree": 49,
+    "communityId": 5,
+    "kmeansCluster": 1,
+    "predictedRole": "hero",
+    "predictedConfidence": 0.84,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "81",
+    "pageRank": 0.008442423944397492,
+    "degree": 12,
+    "communityId": 5,
+    "kmeansCluster": 0,
+    "predictedRole": "villain",
+    "predictedConfidence": 0.82,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "82",
+    "pageRank": 0.007639878121520055,
+    "degree": 8,
+    "communityId": 5,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.77,
+    "predictionFeatures": "Driven by pagerank and degree"
+  },
+  {
+    "id": "83",
+    "pageRank": 0.011267851501427353,
+    "degree": 17,
+    "communityId": 5,
+    "kmeansCluster": 0,
+    "predictedRole": "support",
+    "predictedConfidence": 0.95,
+    "predictionFeatures": "Driven by pagerank and degree"
+  }
+]

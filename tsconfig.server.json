@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.node.json",
+  "compilerOptions": {
+    "esModuleInterop": true
+  },
+  "include": ["server/**/*.ts", "prisma/**/*.ts"]
+}

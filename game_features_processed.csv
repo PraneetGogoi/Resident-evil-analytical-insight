@@ -1,0 +1,13 @@
+game_id,game_title,year,type,chronology_order,total_scenes,unique_characters,total_interactions,interactions_per_scene
+re,Resident Evil,1996,mainline,2,25,6,69,2.76
+re0,Resident Evil 0,2002,mainline,1,36,5,66,1.83
+re2,Resident Evil 2,1998,mainline,4,80,7,177,2.21
+re3,Resident Evil 3: Nemesis,1999,mainline,3,45,4,52,1.16
+re4,Resident Evil 4,2005,mainline,6,16,8,46,2.88
+re5,Resident Evil 5,2009,mainline,8,45,9,127,2.82
+re6,Resident Evil 6,2012,mainline,10,10,8,39,3.9
+re7,Resident Evil 7: Biohazard,2017,mainline,11,96,3,117,1.22
+re8,Resident Evil Village,2021,mainline,12,10,8,27,2.7
+re9,Resident Evil Requiem,2026,mainline,14,461,6,548,1.19
+re_sr,Resident Evil Village – Shadow of Rose,2022,spinoff,13,178,4,199,1.12
+re_ve,Resident Evil: Code – Veronica,2000,mainline,5,31,7,70,2.26
