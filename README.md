@@ -1,63 +1,60 @@
 <img width="1710" height="1036" alt="Screenshot 2026-04-06 at 11 21 04 PM" src="https://github.com/user-attachments/assets/1c6743d2-4baf-472b-a47c-51a82f74a2b9" />
 
-
 # 🧟 Resident Evil Analytical Insight
 
-A data-driven analytical project inspired by the **Resident Evil universe**, focused on extracting meaningful insights using **data science, network analysis, and visualization techniques**.
-
-This project explores patterns, relationships, and structures within the dataset to uncover hidden insights using modern analytical methods.
+A data-driven web application inspired by the **Resident Evil universe**. This project takes raw lore data and transforms it into an interactive, immersive investigation corkboard. By leveraging **data science, network analysis, and D3 visualizations**, we can extract meaningful insights into character connections, factions, and storylines across the game series.
 
 ---
 
 ## 📌 Project Overview
 
-The goal of this project is to:
-
-* Analyze structured/unstructured data from the Resident Evil domain
-* Apply **graph-based analysis** and **community detection**
-* Perform **centrality analysis** to identify key entities
-* Visualize insights for better understanding
-
-This project blends **entertainment data + analytical thinking**, making it both engaging and technically insightful.
+This project blends **survival horror lore + analytical thinking**. We process a large dataset of Resident Evil scenes, character interactions, and game appearances to:
+* 🕸️ Render an interactive **Investigation Corkboard** using D3.js force simulations.
+* 📈 Rank character importance using **PageRank algorithms** (identifying major players like Leon and Chris).
+* 📊 Visualize game timelines, role distributions, and Machine Learning feature importances.
+* 🗄️ Provide a rich, immersive dashboard using modern web aesthetics (Cinzel fonts, torch/grime palettes).
 
 ---
 
-## 🚀 Features
+## 🚀 Key Features
 
-* 📊 Data preprocessing and cleaning
-* 🔗 Graph/network creation
-* 🧠 Community detection using Louvain algorithm
-* 📈 Centrality measures (degree, betweenness, etc.)
-* 📉 Insightful visualizations
-* 🧪 Exploratory data analysis (EDA)
+* **Interactive Case Board:** A drag-and-drop network graph mapping out character interactions, weighted by shared scenes.
+* **Algorithmic Sizing:** Character polaroids scale dynamically based on their calculated PageRank centrality.
+* **Data Dashboards:** Visualized analytics breaking down character classifications (Heroes, Villains, BOWs), game timelines, and survival metrics.
+* **Full-Stack Architecture:** Backed by a PostgreSQL database holding complex character relationships, synced to a Node.js backend.
+* **Immersive UI:** A highly stylized frontend leveraging Glassmorphism, CSS micro-animations, and Shadcn UI.
 
 ---
 
 <img width="1710" height="1031" alt="Screenshot 2026-04-06 at 11 21 29 PM" src="https://github.com/user-attachments/assets/87111b1b-a175-4c06-aac1-7ed3b8ad8fff" />
 
-
 ## 🛠️ Tech Stack
 
-* **Python 3.11+**
-* **Pandas** – data manipulation
-* **NetworkX** – graph analysis
-* **Matplotlib / Seaborn** – visualization
-* **python-louvain** – community detection
-* **NumPy** – numerical operations
+**Frontend:**
+* **React 18** (Vite)
+* **TypeScript**
+* **Tailwind CSS** + **Shadcn UI**
+* **D3.js** (Force-directed graphs & network analysis)
+* **Recharts** (Data visualization)
+
+**Backend & Data:**
+* **Node.js** + **Express**
+* **Prisma ORM**
+* **PostgreSQL**
+* **Python** (Pandas/Scikit-Learn for initial data generation & ML pipelines)
 
 ---
 
 ## 📂 Project Structure
 
-```
+```text
 Resident-evil-analytical-insight/
-│
-├── data/                # Dataset files
-├── notebooks/           # Jupyter notebooks
-├── src/                 # Core scripts
-├── outputs/             # Graphs & results
-├── requirements.txt     # Dependencies
-└── README.md            # Project documentation
+├── src/                 # React Frontend (Pages, Components, D3 logic)
+├── server/              # Node.js Express Backend API
+├── prisma/              # Database schema and seed scripts
+├── public/              # Static assets and exported JSON data
+├── dist/                # Production build output
+└── scripts/             # Python data processing scripts
 ```
 
 ---
@@ -71,115 +68,76 @@ git clone https://github.com/PraneetGogoi/Resident-evil-analytical-insight.git
 cd Resident-evil-analytical-insight
 ```
 
-### 2. Create virtual environment (recommended)
+### 2. Install Dependencies
 
 ```bash
-python -m venv venv
-source venv/bin/activate   # Mac/Linux
-venv\Scripts\activate      # Windows
+npm install
 ```
 
-### 3. Install dependencies
+### 3. Database Setup
+
+Ensure you have a PostgreSQL instance running. Create a `.env` file in the root directory and add your connection string:
+
+```env
+DATABASE_URL="postgresql://user:password@localhost:5432/re_analytics?schema=public"
+```
+
+Initialize the database schema and seed the initial data:
 
 ```bash
-pip install -r requirements.txt
+# Generate the Prisma client
+npx prisma generate
+
+# Push the schema to your database
+npx prisma db push
+
+# Seed the database with characters and connections
+npm run seed
 ```
+
+### 4. Run the Application
+
+Start both the Vite frontend and the Express backend concurrently:
+
+```bash
+npm run dev
+```
+- Frontend will be available at `http://localhost:8080` (or the next available port).
+- Backend API will run on `http://localhost:3001`.
 
 ---
 
-## ▶️ Usage
+## 🧠 Data Science & Analytics
 
-Run the main notebook or script:
+The data powering this application was processed using Python data science libraries.
+* **Community Detection (Louvain):** Grouping characters into interconnected communities.
+* **Centrality Analysis:** Calculating node degree and betweenness to identify key entities.
+* **Machine Learning:** Analyzing feature importance to determine what traits affect a character's "status" (Alive/Deceased).
 
-```bash
-jupyter notebook
-```
-
-or
-
-```bash
-python main.py
-```
-
----
-
-## 🧠 Key Concepts Used
-
-* Graph Theory
-* Community Detection (Louvain Algorithm)
-* Centrality Analysis
-* Data Visualization
-* Exploratory Data Analysis
-
----
-
-## 📊 Sample Insights (Add your outputs here)
-
-* Identification of key characters/entities based on centrality
-* Detection of clusters/communities within the network
-* Relationship patterns between entities
-
-*(You can add screenshots or graphs here for better impact)*
-
----
-
-## ⚠️ Common Issue & Fix
-
-If you encounter:
-
-```
-AttributeError: module 'community' has no attribute 'best_partition'
-```
-
-### Fix:
-
-```bash
-pip uninstall community
-pip install python-louvain
-```
-
-Then use:
-
-```python
-import community.community_louvain as community_louvain
-```
-
----
-
-## 🌱 Future Improvements
-
-* Add interactive dashboards (Streamlit / Dash)
-* Integrate real-time data
-* Improve model-based predictions
-* Expand dataset for deeper insights
+The raw analysis notebooks and CSV files are available in the root repository. To run the Python scripts, you can set up a virtual environment and `pip install -r requirements.txt`.
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome.
-
-* Fork the repository
-* Create a new branch
-* Submit a pull request
+Contributions are welcome!
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-name`)
+3. Submit a pull request
 
 ---
 
 ## 📜 License
 
-This project is for educational and research purposes.
+This project is for educational and research purposes. Resident Evil and its characters are property of Capcom.
 
 ---
 
 ## 👨‍💻 Author
 
-**Praneet Gogoi**
+**Praneet Gogoi**  
 B.Tech CSE | AI & Data Science Enthusiast
-
----
 
 ## ⭐ If you like this project
 
-Give it a ⭐ on GitHub and share your feedback.
-
-[1]: https://github.com/rubenandrebarreiro/resident-evil-sample-data-analytics?utm_source=chatgpt.com "rubenandrebarreiro/resident-evil-sample-data-analytics"
+Give it a ⭐ on GitHub and share your feedback!
