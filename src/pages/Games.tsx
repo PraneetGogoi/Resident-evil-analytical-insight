@@ -1,17 +1,23 @@
 import { useState, useRef, useEffect } from "react";
 import { GameDossierModal } from "@/components/GameDossierModal";
-
+import { LoadingState, ErrorState } from "@/components/SystemState";
 import { Game } from "@/types";
 
 export default function Games() {
   const [games, setGames] = useState<Game[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<Error | null>(null);
 
   useEffect(() => {
     fetch('http://localhost:3001/api/games')
-      .then(res => res.json())
+      .then(res => res.ok ? res.json() : Promise.reject(new Error("Failed to fetch games")))
       .then(data => {
         setGames(data);
+        setIsLoading(false);
+      })
+      .catch(err => {
+        console.error(err);
+        setError(err instanceof Error ? err : new Error("Unknown error"));
         setIsLoading(false);
       });
   }, []);
@@ -103,10 +109,13 @@ export default function Games() {
 
         {/* Grid of Case File Cards */}
         <div className="mt-8 md:mt-[220px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-10">
-            {isLoading ? (
-              <div className="col-span-full text-center py-20 font-['Courier_Prime'] text-torch font-bold">LOADING INCIDENT LOGS...</div>
-            ) : sortedGames.map((game, i) => {
+          {isLoading ? (
+            <LoadingState message="ACCESSING INCIDENT LOGS..." />
+          ) : error ? (
+            <ErrorState error={error} message="FAILED TO RETRIEVE LOGS" />
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-10">
+              {sortedGames.map((game, i) => {
               const rotation = i % 2 === 0 ? `rotate-[${1 + (i % 3)}deg]` : `-rotate-[${1 + (i % 2)}deg]`;
               
               const protagonists = game.protagonists || "AGENTS: IDENTITY REDACTED";
@@ -205,8 +214,9 @@ export default function Games() {
                   </div>
                 </div>
               );
-            })}
-          </div>
+              })}
+            </div>
+          )}
         </div>
         
         <div className="h-[100px]"></div>

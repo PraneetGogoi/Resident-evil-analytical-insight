@@ -9,6 +9,11 @@ import Index from "./pages/Index";
 import Dashboard from "./pages/Dashboard";
 import Characters from "./pages/Characters";
 import Games from "./pages/Games";
+import Bestiary from "./pages/Bestiary";
+import Locations from "./pages/Locations";
+import Armory from "./pages/Armory";
+import Timeline from "./pages/Timeline";
+import FieldUpdates from "./pages/FieldUpdates";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +31,11 @@ const App = () => (
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/characters" element={<Characters />} />
               <Route path="/games" element={<Games />} />
+              <Route path="/bestiary" element={<Bestiary />} />
+              <Route path="/locations" element={<Locations />} />
+              <Route path="/armory" element={<Armory />} />
+              <Route path="/timeline" element={<Timeline />} />
+              <Route path="/updates" element={<FieldUpdates />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Layout>

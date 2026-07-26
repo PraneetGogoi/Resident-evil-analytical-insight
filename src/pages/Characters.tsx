@@ -1,11 +1,12 @@
 import { useState, useRef, useEffect } from "react";
 import { DossierModal } from "@/components/DossierModal";
-
+import { LoadingState, ErrorState } from "@/components/SystemState";
 import { Character } from "@/types";
 
 export default function Characters() {
   const [characters, setCharacters] = useState<Character[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<Error | null>(null);
   const [roleFilter, setRoleFilter] = useState("all");
   const [search, setSearch] = useState("");
   const [flicker, setFlicker] = useState(false);
@@ -19,12 +20,17 @@ export default function Characters() {
 
   useEffect(() => {
     fetch('http://localhost:3001/api/characters')
-      .then(res => res.json())
+      .then(res => res.ok ? res.json() : Promise.reject(new Error("Characters fetch failed")))
       .then(data => {
         // Sort by PageRank by default to show most central characters first
         const sorted = data.sort((a: any, b: any) => (b.pageRank || 0) - (a.pageRank || 0));
         setCharacters(sorted);
         setMaxPageRank(Math.max(...sorted.map((c: any) => c.pageRank || 0)));
+        setIsLoading(false);
+      })
+      .catch(err => {
+        console.error(err);
+        setError(err instanceof Error ? err : new Error("Unknown error"));
         setIsLoading(false);
       });
   }, []);
@@ -152,10 +158,13 @@ export default function Characters() {
 
       {/* Grid of Evidence Cards */}
       <div className={`mt-8 md:mt-[300px] ${flicker ? 'flicker-transition' : ''}`}>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
-          {isLoading ? (
-            <div className="col-span-full text-center py-20 font-['Courier_Prime'] text-torch">LOADING DATABASE RECORDS...</div>
-          ) : filtered.map((c, i) => {
+        {isLoading ? (
+          <LoadingState message="ACCESSING SUBJECT RECORDS..." />
+        ) : error ? (
+          <ErrorState error={error} message="FAILED TO RETRIEVE RECORDS" />
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
+            {filtered.map((c, i) => {
             const isHero = c.classification.toLowerCase() === 'hero';
             const isVillain = c.classification.toLowerCase() === 'villain';
             const isHub = (c.pageRank || 0) >= (maxPageRank * 0.4) && maxPageRank > 0; // Top central nodes
@@ -222,10 +231,11 @@ export default function Characters() {
                 </div>
               </div>
             );
-          })}
-        </div>
+            })}
+          </div>
+        )}
 
-        {filtered.length === 0 && (
+        {!isLoading && !error && filtered.length === 0 && (
           <div className="text-center py-20 font-['Courier_Prime'] text-ash border-2 border-dashed border-torch/20 mt-10">
             [ NO ENTITIES FOUND MATCHING CRITERIA ]
           </div>

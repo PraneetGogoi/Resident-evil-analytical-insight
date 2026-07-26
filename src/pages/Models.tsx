@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { LoadingState, ErrorState } from "@/components/SystemState";
 import {
   ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   BarChart, Bar, Cell, Legend
@@ -26,23 +27,28 @@ const CustomTooltip = ({ active, payload, label }: any) => {
 export default function Models() {
   const [analytics, setAnalytics] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<Error | null>(null);
 
   useEffect(() => {
     fetch('/advanced_analytics.json')
-      .then(r => r.json())
+      .then(r => r.ok ? r.json() : Promise.reject(new Error("Failed to fetch advanced analytics data")))
       .then(data => {
         setAnalytics(data);
         setIsLoading(false);
       })
-      .catch(console.error);
+      .catch(err => {
+        console.error(err);
+        setError(err instanceof Error ? err : new Error("Unknown error"));
+        setIsLoading(false);
+      });
   }, []);
 
   if (isLoading) {
-    return (
-      <div className="min-h-[400px] flex items-center justify-center">
-        <div className="font-['Courier_Prime'] text-torch tracking-widest animate-pulse">TRAINING MODELS...</div>
-      </div>
-    );
+    return <LoadingState message="TRAINING ADVANCED MODELS..." />;
+  }
+
+  if (error) {
+    return <ErrorState error={error} message="MODEL COMPILATION FAILED" />;
   }
 
   const { scatter_data, model_accuracies, centroids } = analytics;

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Character, Game } from "@/types";
 import Models from "./Models";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { LoadingState, ErrorState } from "@/components/SystemState";
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   PieChart, Pie, Cell, LineChart, Line, AreaChart, Area,
@@ -32,12 +33,13 @@ export default function Dashboard() {
   const [charSceneCounts, setCharSceneCounts] = useState<any[]>([]);
   const [mlFeatures, setMlFeatures] = useState<any[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<Error | null>(null);
 
   useEffect(() => {
     Promise.all([
-      fetch('http://localhost:3001/api/characters').then(r => r.json()),
-      fetch('http://localhost:3001/api/games').then(r => r.json()),
-      fetch('http://localhost:3001/api/analytics/summary').then(r => r.json()),
+      fetch('http://localhost:3001/api/characters').then(r => r.ok ? r.json() : Promise.reject(new Error("Characters fetch failed"))),
+      fetch('http://localhost:3001/api/games').then(r => r.ok ? r.json() : Promise.reject(new Error("Games fetch failed"))),
+      fetch('http://localhost:3001/api/analytics/summary').then(r => r.ok ? r.json() : Promise.reject(new Error("Analytics fetch failed"))),
       fetch('/game_timeline.json').then(r => r.json()),
       fetch('/char_scene_counts.json').then(r => r.json()),
       fetch('/ml_feature_importance.json').then(r => r.json())
@@ -49,13 +51,25 @@ export default function Dashboard() {
       setCharSceneCounts(csc || []);
       setMlFeatures(mlf || []);
       setIsLoading(false);
-    }).catch(console.error);
+    }).catch(err => {
+      console.error(err);
+      setError(err instanceof Error ? err : new Error("Unknown error"));
+      setIsLoading(false);
+    });
   }, []);
 
   if (isLoading) {
     return (
-      <div className="relative max-w-[1300px] mx-auto px-6 md:px-12 pt-[70px] pb-[60px] z-[5] min-h-screen flex items-center justify-center">
-        <div className="font-['Courier_Prime'] text-torch tracking-widest animate-pulse">LOADING ANALYTICS...</div>
+      <div className="relative max-w-[1300px] mx-auto px-6 md:px-12 pt-[70px] pb-[60px] z-[5] min-h-[70vh] flex items-center justify-center">
+        <LoadingState message="COMPILING GLOBAL ANALYTICS..." />
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="relative max-w-[1300px] mx-auto px-6 md:px-12 pt-[70px] pb-[60px] z-[5] min-h-[70vh] flex items-center justify-center">
+        <ErrorState error={error} message="DATA CORRUPTION DETECTED" />
       </div>
     );
   }

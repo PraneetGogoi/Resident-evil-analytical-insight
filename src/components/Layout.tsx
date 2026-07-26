@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { AlertCircle } from "lucide-react";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const [tapeTime, setTapeTime] = useState("00:00:00");
@@ -19,6 +20,18 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-screen w-full flex flex-col relative overflow-hidden">
+      
+      {/* Mobile Terminal Warning */}
+      <div className="md:hidden fixed inset-0 bg-black z-[100] flex flex-col items-center justify-center p-6 text-center border-8 border-double border-torch/50">
+        <div className="absolute inset-0 scanline opacity-40 pointer-events-none mix-blend-overlay"></div>
+        <AlertCircle className="w-16 h-16 text-torch-hot animate-[glitch_2s_infinite] mb-6 relative z-10" />
+        <h2 className="font-['Cinzel'] font-bold text-2xl tracking-[5px] text-torch-hot mb-4 relative z-10 glitch-hover">ACCESS DENIED</h2>
+        <p className="font-['Courier_Prime'] text-bone-dim text-sm tracking-widest leading-relaxed relative z-10">
+          TERMINAL DISPLAY NOT OPTIMIZED FOR PORTABLE DEVICES. <br/><br/>
+          PLEASE RECONNECT VIA SECURE DESKTOP TERMINAL.
+        </p>
+      </div>
+
       {/* Global Overlays */}
       <div className="grime"></div>
       <div className="grain"></div>
@@ -46,7 +59,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <Link to="/" className={`pb-1.5 border-b transition-colors ${location.pathname === '/' ? 'border-torch text-torch-hot' : 'border-transparent hover:text-torch-hot hover:border-torch'}`}>Home</Link>
           <Link to="/dashboard" className={`pb-1.5 border-b transition-colors ${location.pathname === '/dashboard' ? 'border-torch text-torch-hot' : 'border-transparent hover:text-torch-hot hover:border-torch'}`}>Dashboard</Link>
           <Link to="/characters" className={`pb-1.5 border-b transition-colors ${location.pathname === '/characters' ? 'border-torch text-torch-hot' : 'border-transparent hover:text-torch-hot hover:border-torch'}`}>Characters</Link>
+          <Link to="/bestiary" className={`pb-1.5 border-b transition-colors ${location.pathname === '/bestiary' ? 'border-torch text-torch-hot' : 'border-transparent hover:text-torch-hot hover:border-torch'}`}>Bestiary</Link>
+          <Link to="/locations" className={`pb-1.5 border-b transition-colors ${location.pathname === '/locations' ? 'border-torch text-torch-hot' : 'border-transparent hover:text-torch-hot hover:border-torch'}`}>Locations</Link>
+          <Link to="/armory" className={`pb-1.5 border-b transition-colors ${location.pathname === '/armory' ? 'border-torch text-torch-hot' : 'border-transparent hover:text-torch-hot hover:border-torch'}`}>Armory</Link>
+          <Link to="/timeline" className={`pb-1.5 border-b transition-colors ${location.pathname === '/timeline' ? 'border-torch text-torch-hot' : 'border-transparent hover:text-torch-hot hover:border-torch'}`}>Timeline</Link>
           <Link to="/games" className={`pb-1.5 border-b transition-colors ${location.pathname === '/games' ? 'border-torch text-torch-hot' : 'border-transparent hover:text-torch-hot hover:border-torch'}`}>Games</Link>
+          <Link to="/updates" className={`pb-1.5 border-b transition-colors ${location.pathname === '/updates' ? 'border-torch text-torch-hot' : 'border-transparent hover:text-torch-hot hover:border-torch'}`}>Updates</Link>
         </div>
       </nav>
 
